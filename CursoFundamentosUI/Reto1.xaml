@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CursoFundamentosUI.Reto1"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Reto1">
+
+    <ScrollView BackgroundColor="{StaticResource BackgroundColor}">
+
+        <VerticalStackLayout>
+
+            <Frame
+                Margin="15,20"
+                Padding="0"
+                BorderColor="Transparent"
+                CornerRadius="20">
+                <Grid
+                    Margin="10"
+                    Padding="10"
+                    BackgroundColor="{StaticResource White}"
+                    ColumnDefinitions="*,*"
+                    RowDefinitions="*,*,*,*,*,*,*,*,*">
+                    <Frame
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Margin="0,20,0,14"
+                        BackgroundColor="#bfdcd7"
+                        BorderColor="Transparent"
+                        CornerRadius="20"
+                        HeightRequest="100"
+                        HorizontalOptions="Start"
+                        WidthRequest="100">
+                        <Image
+                            Aspect="AspectFit"
+                            HeightRequest="130"
+                            Source="avatar"
+                            WidthRequest="130" />
+
+                    </Frame>
+                    <Image
+                        Margin="75,10"
+                        HeightRequest="30"
+                        HorizontalOptions="Start"
+                        Source="check_avatar"
+                        VerticalOptions="Start"
+                        WidthRequest="30" />
+
+
+                    <Label
+                        Grid.Row="1"
+                        FontAttributes="Bold"
+                        FontSize="30"
+                        Text="Valeria D."
+                        TextColor="Black" />
+
+                    <Label
+                        Grid.Row="2"
+                        Grid.ColumnSpan="2"
+                        LineBreakMode="WordWrap">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Software developer " />
+                                <Span
+                                    FontAttributes="Bold"
+                                    Text="@darksoulr"
+                                    TextColor="Black" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <Label Grid.Row="3" Text="Electronic Engenieer" />
+
+                    <Button
+                        Grid.Row="4"
+                        Margin="0,10,-30,0"
+                        Text="Book class | $1,300.00" />
+
+                    <Button
+                        Grid.Row="4"
+                        Grid.Column="2"
+                        Margin="50,10,0,0"
+                        Style="{StaticResource SecondaryButton}"
+                        Text="Follow" />
+
+                    <!--  Datos red  -->
+                    <Grid
+                        Grid.Row="5"
+                        Grid.ColumnSpan="2"
+                        Margin="0,0,0,20"
+                        Padding="0"
+                        ColumnDefinitions="*,*,*"
+                        HeightRequest="70"
+                        RowDefinitions="*,*">
+
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Margin="0"
+                            Padding="0"
+                            FontSize="Caption"
+                            Text="Students"
+                            VerticalTextAlignment="End" />
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            FontAttributes="Bold"
+                            FontSize="22"
+                            Text="10"
+                            TextColor="Black" />
+
+                        <BoxView
+                            Grid.RowSpan="2"
+                            Grid.Column="0"
+                            Margin="20"
+                            CornerRadius="5"
+                            HeightRequest="30"
+                            HorizontalOptions="End"
+                            WidthRequest="1"
+                            Color="{StaticResource Gray100}" />
+
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Margin="10,0,0,0"
+                            FontSize="Caption"
+                            Text="Content"
+                            VerticalTextAlignment="End" />
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10,0,0,0"
+                            FontAttributes="Bold"
+                            FontSize="22"
+                            Text="30"
+                            TextColor="Black" />
+
+                        <BoxView
+                            Grid.RowSpan="2"
+                            Grid.Column="1"
+                            Margin="10"
+                            CornerRadius="5"
+                            HeightRequest="30"
+                            HorizontalOptions="End"
+                            WidthRequest="1"
+                            Color="{StaticResource Gray100}" />
+
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            Margin="20,0,0,0"
+                            FontSize="Caption"
+                            Text="Followers"
+                            VerticalTextAlignment="End" />
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="2"
+                            Margin="20,0,0,0"
+                            FontAttributes="Bold"
+                            FontSize="22"
+                            Text="100"
+                            TextColor="Black" />
+
+
+                    </Grid>
+
+                    <Frame
+                        Grid.Row="6"
+                        Grid.ColumnSpan="2"
+                        Padding="-5,5,-5,5"
+                        BackgroundColor="#f9f9f9"
+                        BorderColor="Transparent"
+                        CornerRadius="10">
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="10">
+                            <Button
+                                Padding="20,0"
+                                BackgroundColor="White"
+                                Style="{StaticResource SecondaryButton}"
+                                Text="Courses" />
+                            <Button
+                                BackgroundColor="Transparent"
+                                Text="Source files"
+                                TextColor="{StaticResource GrayText}" />
+                            <Button
+                                BackgroundColor="Transparent"
+                                Text="Discussion"
+                                TextColor="{StaticResource GrayText}" />
+                        </HorizontalStackLayout>
+                    </Frame>
+
+                    <Frame
+                        Grid.Row="7"
+                        Grid.Column="1"
+                        Margin="0,10,0,0"
+                        Padding="0,0,6,0"
+                        BackgroundColor="Black"
+                        BorderColor="Transparent"
+                        CornerRadius="12"
+                        HeightRequest="135"
+                        HorizontalOptions="End"
+                        WidthRequest="100">
+                        <BoxView
+                            CornerRadius="5"
+                            HeightRequest="70"
+                            HorizontalOptions="End"
+                            WidthRequest="3"
+                            Color="White" />
+                    </Frame>
+
+                    <Frame
+                        Grid.Row="7"
+                        Grid.ColumnSpan="2"
+                        Margin="0,10,15,0"
+                        Padding="20"
+                        BackgroundColor="#ecdcf3"
+                        BorderColor="Transparent"
+                        CornerRadius="15"
+                        HeightRequest="160">
+                        <Grid
+                            Padding="0"
+                            ColumnDefinitions="Auto,*"
+                            RowDefinitions="Auto,Auto,Auto,Auto">
+                            <Label
+                                Grid.Row="0"
+                                FontAttributes="Bold"
+                                FontSize="18"
+                                HorizontalTextAlignment="Start"
+                                Text="Become a .NET Developer"
+                                TextColor="Black" />
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                FontAttributes="Bold"
+                                FontSize="20"
+                                HorizontalTextAlignment="End"
+                                Text="♡"
+                                TextColor="Black" />
+                            <Label
+                                Grid.Row="1"
+                                FontSize="10"
+                                Text="Learn the skills and get the Job"
+                                TextColor="{StaticResource GrayText}" />
+                            <Label
+                                Grid.Row="2"
+                                Margin="0,10,0,0"
+                                FontAttributes="Bold"
+                                Text="/ / / / /"
+                                TextColor="Black" />
+
+                            <Label
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                Margin="0,0,0,-50"
+                                Padding="0"
+                                LineBreakMode="WordWrap"
+                                TextColor="Black"
+                                VerticalTextAlignment="End">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span
+                                            FontAttributes="Bold"
+                                            FontSize="25"
+                                            Text="4.85 " />
+                                        <Span
+                                            FontAttributes="Bold"
+                                            FontSize="10"
+                                            Text="★ raitings" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                            <Label
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                Margin="0,0,0,-50"
+                                Padding="0"
+                                HorizontalOptions="End"
+                                Text="48h"
+                                TextColor="Black"
+                                VerticalTextAlignment="End" />
+
+                        </Grid>
+                    </Frame>
+
+                    <Frame
+                        Grid.Row="8"
+                        Grid.Column="1"
+                        Margin="0,10,0,0"
+                        Padding="0,0,6,0"
+                        BackgroundColor="Black"
+                        BorderColor="Transparent"
+                        CornerRadius="12"
+                        HeightRequest="135"
+                        HorizontalOptions="End"
+                        WidthRequest="100">
+                        <BoxView
+                            CornerRadius="5"
+                            HeightRequest="70"
+                            HorizontalOptions="End"
+                            WidthRequest="3"
+                            Color="White" />
+                    </Frame>
+
+                    <Frame
+                        Grid.Row="8"
+                        Grid.ColumnSpan="2"
+                        Margin="0,10,15,0"
+                        Padding="20"
+                        BackgroundColor="#f3ecdf"
+                        BorderColor="Transparent"
+                        CornerRadius="15"
+                        HeightRequest="160">
+                        <Grid
+                            Padding="0"
+                            ColumnDefinitions="Auto,*"
+                            RowDefinitions="Auto,Auto,Auto,Auto">
+                            <Label
+                                Grid.Row="0"
+                                FontAttributes="Bold"
+                                FontSize="18"
+                                HorizontalTextAlignment="Start"
+                                Text="Become a D365 Developer"
+                                TextColor="Black" />
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                FontAttributes="Bold"
+                                FontSize="20"
+                                HorizontalTextAlignment="End"
+                                Text="♡"
+                                TextColor="Black" />
+                            <Label
+                                Grid.Row="1"
+                                FontSize="10"
+                                Text="Learn the skills and get the Job"
+                                TextColor="{StaticResource GrayText}" />
+                            <Label
+                                Grid.Row="2"
+                                Margin="0,10,0,0"
+                                FontAttributes="Bold"
+                                Text="/ / / / /"
+                                TextColor="Black" />
+
+                            <Label
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                Margin="0,0,0,-50"
+                                Padding="0"
+                                LineBreakMode="WordWrap"
+                                TextColor="Black"
+                                VerticalTextAlignment="End">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span
+                                            FontAttributes="Bold"
+                                            FontSize="25"
+                                            Text="4.85 " />
+                                        <Span
+                                            FontAttributes="Bold"
+                                            FontSize="10"
+                                            Text="★ raitings" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                            <Label
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                Margin="0,0,0,-50"
+                                Padding="0"
+                                HorizontalOptions="End"
+                                Text="48h"
+                                TextColor="Black"
+                                VerticalTextAlignment="End" />
+
+                        </Grid>
+                    </Frame>
+
+                </Grid>
+            </Frame>
+
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
