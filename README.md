@@ -2,4 +2,4 @@
 
 Reto de replicar una interfaz con XAML
 
-![image](https://github.com/Andex09/CursoFundamentosUINetMaui/assets/86902034/34bcaacf-65bd-4b87-b8b4-bcb35d37e7d2)
+![image](https://github.com/Andex09/CursoFundamentosUINetMaui/assets/86902034/612fcb3d-5c31-4470-a1bf-61df3862c197)
